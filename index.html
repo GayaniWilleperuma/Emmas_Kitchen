@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma's Kitchen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #ff6600;
+            color: rgb(51, 46, 46);
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe66d;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image:url("images/placeholder.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.562);
+            border-radius: 10px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 50px 0;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff6600;
+        }
+        main p {
+            font-size: 1.2rem;
+            color: #FFEDD8;
+        }
+        .menu-intro {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #ee5253;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with a welcome message and navigation links -->
+    <header>
+        <h1>Emma's Kitchen</h1>
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#favour">Find Your Favour</a>
+            <a href="#contactus">Contact Us</a>
+            <a href="cart.html">Cart</a>
+            <span id="userLinks"></span>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Delicious Meals Delivered Fresh!</h2>
+    </section>
+
+    <!-- Main content section with an introduction to the menu -->
+    <main>
+        <h2>Discover Your Favourites at Emma's Kitchen</h2>
+        <p class="menu-intro">Explore our variety of delightful meals made from fresh ingredients. Whether it's breakfast, lunch, or dinner, we have something for every palate.</p>
+        <button class="cta-button" onclick="window.location.href='menu.html'">Explore Menu</button>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>© 2024 Emma's Kitchen by Gayani SW</p>
+    </footer>
+
+    <!-- Optional JavaScript for any additional interactions -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
